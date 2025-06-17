@@ -5,4 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/AppLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/cyan"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FirstHabit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:text="Ложиться рано спать: 0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/completedButton"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/completed_text"
+        app:layout_constraintStart_toEndOf="@+id/FirstHabit"
+        app:layout_constraintTop_toBottomOf="@+id/AppLabelText" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/reset_text"
+        app:layout_constraintStart_toEndOf="@+id/completedButton"
+        app:layout_constraintTop_toBottomOf="@+id/AppLabelText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
