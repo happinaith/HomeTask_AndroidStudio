@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">HomeTask</string>
+    <string name="app_name">Трекер привычек</string>
+    <string name="reset_text">Сброс</string>
+    <string name="completed_text">Выполнено</string>
 </resources>
